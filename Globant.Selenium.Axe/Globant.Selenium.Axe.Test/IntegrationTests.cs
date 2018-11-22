@@ -16,7 +16,7 @@ namespace Globant.Selenium.Axe.Test
         public void Initialize()
         {
             _webDriver = new FirefoxDriver();
-            _webDriver.Manage().Timeouts().SetScriptTimeout(TimeSpan.FromMinutes(3));
+            _webDriver.Manage().Timeouts().AsynchronousJavaScript  = TimeSpan.FromMinutes(3);
             _webDriver.Manage().Window.Maximize();
         }
 
